@@ -31,13 +31,13 @@
     $conValid= preg_match_all('/^((?=\S*[A-Z])(?=\S*[a-z])(?=\S*\d)(?=\S*[@$&%#!¡?¿.,]))\S{10,30}$/',$con);
 
     $conInseguras=['123456','password','Password','contraseña','qwerty','12345','letmein','welcome','dragon'];
-    $valid=0;
+    $valid=0; //Arreglo para las contraseñas inseguras
     foreach ($conInseguras as $key => $value) {
       if($value==$con){
         $valid+=1;
       }
     }
-    if($valid>0){
+    if($valid>0){ //Validación de todos los datos
       echo "<br>Su contraseña <strong>".$con."</strong> es muy insegura";
       $validacion+=1;
     }elseif($conValid==false){
@@ -61,7 +61,7 @@
     }if($usuValid==false){
       echo "<br>RFC inválido: <strong>".$usu."</strong>";
       $validacion+=1;
-    }if($validacion==0){
+    }if($validacion==0){ //En caso de que todos los datos sean validados
       echo "<br>Datos correctos";
     }
 

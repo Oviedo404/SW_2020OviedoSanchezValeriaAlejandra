@@ -19,7 +19,7 @@ echo "<!DOCTYPE html>
   </head>
   <body>";
     $texto=(isset($_POST['texto']) && !is_numeric($_POST['texto']))? $_POST['texto']:'0';
-    if($texto == '0'){
+    if($texto == '0'){ //Verifica que exista un mensaje
       header('Location:/templates/cifradoC.html');
     }else{
       $uno=['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V'
@@ -29,7 +29,7 @@ echo "<!DOCTYPE html>
       $esp=['Á','É','Í','Ó','Ú','Ñ'];
       $texto=mb_strtoupper($texto);
       $textoEsp= preg_match_all('/[ÁÉÍÓÚÑ]/',$texto);
-      if($textoEsp==true){
+      if($textoEsp==true){ //En caso de caracteres especiales
           header('Location:/templates/cifradoC.html');
       }else{
         $textoCif=str_replace($uno, $dos, $texto);

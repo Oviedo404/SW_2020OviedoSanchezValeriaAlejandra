@@ -1,0 +1,12 @@
+^\[\+672 \d+\] (Skipper|Kowalski|Cabo|Rico)$
+
+[+672 7473935113] Rico
+[+672 5345009331] Skipper
+[+672 507262883] Rico
+[+672 862861300] Kowalski
+[+672 111342529] Kowalski
+[+672 8766764155] Kowalski
+[+672 741790880] Kowalski
+[+672 602806827] Skipper
+[+672 5085533408] Cabo
+[+672 92519583688] Skipper

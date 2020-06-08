@@ -1,0 +1,5 @@
+(?<!\w)[Rr]egex(?!\w)
+
+Hola, regex, soy "Regex. Yo también soy [regex], incluso yo (regex, o 
+también yo Regex). "Regex" sí soy, pero yo no soyRegex ;(.¿Cuántas veces
+estará "Regex aquí"?, ya me cansé de escribir 'regex'.

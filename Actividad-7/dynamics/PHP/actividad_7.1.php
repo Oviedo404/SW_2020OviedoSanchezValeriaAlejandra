@@ -14,7 +14,7 @@
     </style>
   </head>
   <body>";
-    $validacion=0;
+    $validacion=0; //Variable para la validación de los datos
     $nom=(isset($_POST['nombre']) && $_POST['nombre']!='')?$_POST['nombre']:'0';
     $apPat=(isset($_POST['apellidoPat']) && $_POST['apellidoPat']!='')?$_POST['apellidoPat']:'0';
     $apMat=(isset($_POST['apellidoMat']) && $_POST['apellidoMat']!='')?$_POST['apellidoMat']:'0';
@@ -44,7 +44,7 @@
     }if($usuValid==false){
       echo "<br>RFC inválido: <strong>".$usu."</strong>";
       $validacion+=1;
-    }if($validacion==0){
+    }if($validacion==0){ //En caso de que todos los datos sean correctos
       echo "<br>Datos correctos";
     }
     echo "</br></br><a href='../../../templates/actividad_7.1.html'>Regresar</a>";
